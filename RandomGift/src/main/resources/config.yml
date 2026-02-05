@@ -1,0 +1,38 @@
+interval-minutes: 30
+
+warning:
+  enabled: true
+  minutes-before: 5
+  message: "&6[Подарок] &eЧерез {minutes} минут &7будет раздача случайного предмета!"
+
+amount:
+  min: 1
+  max: 1
+
+full-inventory: DROP
+broadcast: true
+
+messages:
+  to-player: "&aТебе выпал подарок: &e{item} x{amount}"
+  to-player-drop: "&aТебе выпал подарок, но инвентарь полон — предмет выпал рядом: &e{item} x{amount}"
+  to-player-skip: "&cИнвентарь полон, подарок пропущен."
+  luck: "&6[Подарок] &eВ этот раз удача — {player}&e! &7Выпало: &e{item} x{amount}&7. Следующая удача через &e{next}&7 минут."
+
+items:
+  mode: WHITELIST_ONLY
+  whitelist:
+    - DIAMOND_SWORD
+    - DIAMOND_PICKAXE
+    - DIAMOND_HELMET
+    - DIAMOND_CHESTPLATE
+    - DIAMOND_LEGGINGS
+    - DIAMOND_BOOTS
+    - BOW
+    - CROSSBOW
+    - TRIDENT
+    - SHIELD
+    - GOLDEN_APPLE
+    - TOTEM_OF_UNDYING
+    - VILLAGER_SPAWN_EGG
+  blacklist:
+    - AIR
