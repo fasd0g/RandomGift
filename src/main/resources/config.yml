@@ -1,0 +1,100 @@
+# RandomGift configuration
+
+# Interval between gifts (minutes)
+interval-minutes: 30
+
+# Gift only happens when online players >= min-online
+# "больше 2" -> минимум 3
+min-online: 3
+
+# Warning message before gift (0 minutes disables)
+warning:
+  enabled: true
+  minutes-before: 5
+  message: "&6[Подарок] &eЧерез {minutes} минут &7будет раздача случайного предмета!"
+
+# Amount of items to give
+amount:
+  min: 1
+  max: 3
+
+# What to do if inventory is full:
+# DROP - drop near player
+# SKIP - skip gift
+full-inventory: DROP
+
+messages:
+  to-player: "&aТебе выпал подарок: &e{item} x{amount}"
+  to-player-drop: "&aТебе выпал подарок, но инвентарь полон — предмет выпал рядом: &e{item} x{amount}"
+  to-player-skip: "&cИнвентарь полон, подарок пропущен."
+  luck: "&6[Подарок] &eВ этот раз удача — {player}&e! &7Выпало: &e{item} x{amount}&7. Следующая удача через &e{next}&7 минут."
+
+# Items pool (the plugin uses items.whitelist)
+items:
+  whitelist:
+    # --- Weapons ---
+    - WOODEN_SWORD
+    - STONE_SWORD
+    - IRON_SWORD
+    - DIAMOND_SWORD
+    - NETHERITE_SWORD
+    - BOW
+    - CROSSBOW
+    - TRIDENT
+    - MACE
+    - SHIELD
+
+    # --- Tools ---
+    - IRON_PICKAXE
+    - DIAMOND_PICKAXE
+    - NETHERITE_PICKAXE
+    - IRON_AXE
+    - DIAMOND_AXE
+    - NETHERITE_AXE
+    - IRON_SHOVEL
+    - DIAMOND_SHOVEL
+    - NETHERITE_SHOVEL
+    - IRON_HOE
+    - DIAMOND_HOE
+    - NETHERITE_HOE
+    - SHEARS
+    - FISHING_ROD
+    - FLINT_AND_STEEL
+
+    # --- Armor ---
+    - IRON_HELMET
+    - IRON_CHESTPLATE
+    - IRON_LEGGINGS
+    - IRON_BOOTS
+    - DIAMOND_HELMET
+    - DIAMOND_CHESTPLATE
+    - DIAMOND_LEGGINGS
+    - DIAMOND_BOOTS
+    - NETHERITE_HELMET
+    - NETHERITE_CHESTPLATE
+    - NETHERITE_LEGGINGS
+    - NETHERITE_BOOTS
+
+    # --- Useful ---
+    - GOLDEN_APPLE
+    - ENCHANTED_GOLDEN_APPLE
+    - GOLDEN_CARROT
+    - TOTEM_OF_UNDYING
+    - ENDER_PEARL
+    - EXPERIENCE_BOTTLE
+    - FIREWORK_ROCKET
+    - ARROW
+    - SPECTRAL_ARROW
+
+    # --- Spawn eggs ---
+    - VILLAGER_SPAWN_EGG
+    - IRON_GOLEM_SPAWN_EGG
+    - ZOMBIE_SPAWN_EGG
+    - SKELETON_SPAWN_EGG
+    - CREEPER_SPAWN_EGG
+    - COW_SPAWN_EGG
+    - PIG_SPAWN_EGG
+    - CHICKEN_SPAWN_EGG
+    - SHEEP_SPAWN_EGG
+    - WOLF_SPAWN_EGG
+    - CAT_SPAWN_EGG
